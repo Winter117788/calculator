@@ -1,0 +1,36 @@
+.calculator {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 将每行分成4列 */
+    gap: 10px; /* 设置按钮之间的间距 */
+    max-width: 260px; /* 控制整个计算器的宽度 */
+    margin: 0 auto; /* 居中显示 */
+    border: 5px solid rgb(21, 15, 3);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#display {
+    grid-column: span 4; /* 让显示框占满一行4列 */
+    height: 40px;
+    background-color: #f1f1f1;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    background-color: skyblue;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    color: brown;
+    background-color: mistyrose;
+}
+
+#delete {
+    grid-column: span 3;
+}
+
+#dot {
+    font-size: 30px ;
+}
